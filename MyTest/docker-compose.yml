@@ -3,12 +3,6 @@ services:
   db:
     image: postgres:latest
     restart: always
-    # environment:
-    #   POSTGRES_PASSWORD: pwd123
-    # volumes:
-    #   - pgdata:/var/lib/postgresql/data
-    # ports:
-    #   - '5432:5432'
     env_file:
       - config/.env
     volumes:
